@@ -1,7 +1,18 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+	/* config options here */
+	images: {
+		remotePatterns: [
+			//aws s3 for notion images "https://prod-files-secure.s3.us-west-2.amazonaws.com/"
+			{
+				protocol: 'https',
+				hostname: 'prod-files-secure.s3.us-west-2.amazonaws.com',
+				port: '',
+				pathname: '/**',
+			},
+		],
+	},
 };
 
 export default nextConfig;
