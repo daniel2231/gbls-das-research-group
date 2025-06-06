@@ -33,6 +33,9 @@ export const NotionAPI = {
 					},
 				],
 			});
+
+			console.log(response.results); // Add this line to log the response t
+
 			return response.results.map((page: any) => {
 				const properties = page.properties;
 				return {
@@ -130,8 +133,7 @@ export const NotionAPI = {
 					properties.Created?.created_time || new Date().toISOString(),
 				slug: properties.Slug?.rich_text?.[0]?.plain_text || page.id,
 				category: properties.Category?.select?.name || 'Uncategorized',
-				author:
-					properties.Author?.rich_text?.[0]?.plain_text || 'GBLS Research Team',
+				author: properties.Author.select.name || 'GBLS Research Team',
 				coverImage:
 					properties.CoverImage?.files?.[0]?.file?.url ||
 					properties.CoverImage?.files?.[0]?.external?.url,
