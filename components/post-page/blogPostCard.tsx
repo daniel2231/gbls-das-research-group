@@ -26,8 +26,6 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
 		});
 	};
 
-	console.log(post);
-
 	return (
 		<article className="group bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg dark:shadow-gray-900/20 dark:hover:shadow-gray-900/40 transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600">
 			<Link href={`/posts/${post.slug}`}>

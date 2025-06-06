@@ -89,7 +89,7 @@ async function BlogPostData({ slug }: { slug: string }) {
 			<footer className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
 				<div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-900/50 rounded-lg p-6">
 					<h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
-						GBLS DAS Research Group
+						GndBros DAS Research Group
 					</h3>
 					<p className="text-gray-600 dark:text-gray-400">
 						Providing in-depth technical analysis and research insights on GBLS

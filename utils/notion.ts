@@ -34,8 +34,6 @@ export const NotionAPI = {
 				],
 			});
 
-			console.log(response.results); // Add this line to log the response t
-
 			return response.results.map((page: any) => {
 				const properties = page.properties;
 				return {
@@ -75,9 +73,6 @@ export const NotionAPI = {
 
 			return response.results.map((page: any) => {
 				const properties = page.properties;
-
-				console.log(properties); // Add this line to log the properties to the console for debugging purposes
-				console.log(page);
 
 				return {
 					id: page.id,

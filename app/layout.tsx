@@ -4,8 +4,8 @@ import { Navbar } from '@/components/navbar';
 import ThemeProvider from './theme-provider';
 
 export const metadata: Metadata = {
-	title: 'GDRS Research Group',
-	description: 'GBLS DAS Research Group',
+	title: 'GNDBROS DAS Research Group',
+	description: 'GNDBROS DAS Research Group',
 };
 
 export default function RootLayout({
