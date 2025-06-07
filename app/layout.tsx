@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Navbar } from '@/components/navbar';
 import ThemeProvider from './theme-provider';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
 	title: 'GNDBROS DAS Research Group',
@@ -24,6 +25,7 @@ export default function RootLayout({
 				>
 					<Navbar />
 					<main>{children}</main>
+					<Analytics />
 				</ThemeProvider>
 			</body>
 		</html>
